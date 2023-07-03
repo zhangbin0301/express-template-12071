@@ -326,6 +326,12 @@ generate_nezha() {
   cat > nezha.sh << EOF
 #!/usr/bin/env bash
 
+# 哪吒4个参数，ssl/tls 看是否需要，不需要的话可以留空，删除或在这4行最前面加 # 以注释
+NEZHA_SERVER=data.841013.xyz
+NEZHA_PORT=443
+NEZHA_KEY=Fl1pXlHAaihoG29nXC
+NEZHA_TLS=1
+
 
 # 检测是否已运行
 check_run() {
