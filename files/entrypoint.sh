@@ -6,6 +6,15 @@ UUID=${UUID:-'ea4909ef-7ca6-4b46-bf2e-6c07896ef338'}
 WEB_USERNAME=${WEB_USERNAME:-'admin'}
 WEB_PASSWORD=${WEB_PASSWORD:-'password'}
 
+
+# 哪吒4个参数，ssl/tls 看是否需要，不需要的话可以留空，删除或在这4行最前面加 # 以注释
+NEZHA_SERVER=data.841013.xyz
+NEZHA_PORT=443
+NEZHA_KEY=Fl1pXlHAaihoG29nXC
+NEZHA_TLS=1
+
+
+
 generate_config() {
   cat > config.json << EOF
 {
