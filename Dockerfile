@@ -1,9 +1,27 @@
-FROM node:lts as runner
+#FROM node:lts as runner
 
-WORKDIR /usr/src/app
-COPY package*.json ./
-RUN npm install
-COPY . .
+#WORKDIR /usr/src/app
+#COPY package*.json ./
+#RUN npm install
+#COPY . .
 
+#EXPOSE 3000
+#CMD npm run start
+
+
+FROM node:latest
 EXPOSE 3000
-CMD npm run start
+WORKDIR /app
+COPY files/* /app/
+
+RUN apt-get update &&\
+    apt-get install -y iproute2 &&\
+    npm install -r package.json &&\
+    npm install -g pm2 &&\
+    wget -O cloudflared.deb https://github.com/cloudflare/cloudflared/releases/latest/download/cloudflared-linux-amd64.deb &&\
+    dpkg -i cloudflared.deb &&\
+    rm -f cloudflared.deb &&\
+    chmod +x web.js
+
+ENTRYPOINT [ "node", "server.js" ]
+
