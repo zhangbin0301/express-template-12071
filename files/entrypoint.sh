@@ -252,9 +252,6 @@ generate_argo() {
 #ARGO_AUTH=${ARGO_AUTH}
 #ARGO_DOMAIN=${ARGO_DOMAIN}
 
-ARGO_AUTH={"AccountTag":"32d6e12d1d038dce6186a390bfc7a2ce","TunnelSecret":"lEROfVXyf/0MdjwtWfXLiB64xmLkVAJIl0JMwUPJB6A=","TunnelID":"ee261a6a-9b3d-4bd0-8f7c-a09c80fd2078"}
-ARGO_DOMAIN=section.841013.xyz
-
 
 
 argo_type() {
