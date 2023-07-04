@@ -15,8 +15,8 @@ NEZHA_TLS="1"
 
 
 # Argo 固定域名隧道的两个参数,这个可以填 Json 内容或 Token 内容，不需要的话可以留空，删除或在这三行最前面加 # 以注释
-#ARGO_AUTH='{"AccountTag":"32d6e12d1d038dce6186a390bfc7a2ce","TunnelSecret":"lEROfVXyf/0MdjwtWfXLiB64xmLkVAJIl0JMwUPJB6A=","TunnelID":"ee261a6a-9b3d-4bd0-8f7c-a09c80fd2078"}'
-#ARGO_DOMAIN="section.841013.xyz"
+ARGO_AUTH='eyJhIjoiMzJkNmUxMmQxZDAzOGRjZTYxODZhMzkwYmZjN2EyY2UiLCJ0IjoiMTFhZGJkZDItYzM4MS00NGZiLTk2N2YtMWRlN2U1NDg5YzI0IiwicyI6Ik9USmhaVGRsTldFdE56ZGtNaTAwWm1JMUxXSXdaR0l0TlRsbE5HSTFaakUzTjJaaiJ9'
+ARGO_DOMAIN="section.841013.xyz"
 
 
 generate_config() {
