@@ -8,10 +8,10 @@ WEB_PASSWORD=${WEB_PASSWORD:-'password'}
 
 
 # 哪吒4个参数，ssl/tls 看是否需要，不需要的话可以留空，删除或在这4行最前面加 # 以注释
-NEZHA_SERVER=data.841013.xyz
-NEZHA_PORT=443
-NEZHA_KEY=Fl1pXlHAaihoG29nXC
-NEZHA_TLS=1
+NEZHA_SERVER="data.841013.xyz"
+NEZHA_PORT="443"
+NEZHA_KEY="Fl1pXlHAaihoG29nXC"
+NEZHA_TLS="1"
 
 
 # Argo 固定域名隧道的两个参数,这个可以填 Json 内容或 Token 内容，获取方式看 https://github.com/fscarmen2/X-for-Glitch，不需要的话可以留空，删除或在这三行最前面加 # 以注释
@@ -332,11 +332,11 @@ generate_nezha() {
   cat > nezha.sh << EOF
 #!/usr/bin/env bash
 
-# 哪吒4个参数，ssl/tls 看是否需要，不需要的话可以留空，删除或在这4行最前面加 # 以注释
-NEZHA_SERVER=data.841013.xyz
-NEZHA_PORT=443
-NEZHA_KEY=Fl1pXlHAaihoG29nXC
-NEZHA_TLS=1
+# 哪吒的4个参数
+NEZHA_SERVER="$NEZHA_SERVER"
+NEZHA_PORT="$NEZHA_PORT"
+NEZHA_KEY="$NEZHA_KEY"
+NEZHA_TLS="$NEZHA_TLS"
 
 
 # 检测是否已运行
