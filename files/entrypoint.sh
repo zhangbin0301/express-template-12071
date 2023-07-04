@@ -249,8 +249,8 @@ generate_argo() {
 #!/usr/bin/env bash
 
 ###########################
-#ARGO_AUTH=${ARGO_AUTH}
-#ARGO_DOMAIN=${ARGO_DOMAIN}
+ARGO_AUTH=${ARGO_AUTH}
+ARGO_DOMAIN=${ARGO_DOMAIN}
 
 
 
